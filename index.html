@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles/application.css"> 
   <link rel="stylesheet" type="text/css" href="styles/header.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/form.css">
 </head>
 <body>
   <div class="container">
@@ -15,6 +16,34 @@
       <a href="index.html" class="header_logo">IMD Airlines</a>
     </header>
     <main class="main">
+      <form class="form">
+        <div class="form_group_inline">
+          <a href="index.html" class="header_logo">IMD Airlines</a>
+        </div>
+        <div class="form_group">
+          <label>Usuário</label>
+          <input
+            id="usuario"
+            name="usuario"
+            placeholder="Informe o seu usuário" 
+            class="input"
+          />
+        </div>
+        <div class="form_group">
+          <label>Senha</label>
+          <input
+            id="senha"
+            name="senha"
+            placeholder="Informe a sua senha"
+            class="input"
+          />
+        </div>
+        <a class="form_link" href="#">Esqueci minha senha</a>
+        <div class="form_group_inline">
+          <button class="button">Entrar</button>
+          <button class="button">Limpar</button>
+        </div>
+      </form>
     </main>
   </div>
 </body>
