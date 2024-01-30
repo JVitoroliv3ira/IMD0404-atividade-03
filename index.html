@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMD Airlines - Login</title>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/application.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/header.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/form.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="header_logo">IMD Airlines</a>
+    </header>
+    <main class="main">
+      <form class="form">
+        <div class="form_group_inline">
+          <a href="index.html" class="header_logo">IMD Airlines</a>
+        </div>
+        <div class="form_group">
+          <label>Usuário</label>
+          <input
+            id="usuario"
+            name="usuario"
+            placeholder="Informe o seu usuário" 
+            class="input"
+          />
+        </div>
+        <div class="form_group">
+          <label>Senha</label>
+          <input
+            id="senha"
+            name="senha"
+            type="password"
+            placeholder="Informe a sua senha"
+            class="input"
+          />
+        </div>
+        <a class="form_link" href="#">Esqueci minha senha</a>
+        <div class="form_group_inline">
+          <button id="botao_login" class="button">Entrar</button>
+          <button id="botao_limpar_formulario_login" class="button">Limpar</button>
+        </div>
+        <div id="badge_erro" class="badge_erro" style="display: none;"></div>
+      </form>
+    </main>
+  </div>
+  <script src="script/autenticacao.js"></script>
+</body>
+</html>
