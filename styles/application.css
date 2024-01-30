@@ -1,6 +1,7 @@
 :root {
   --background-color-primary: rgb(203 213 225);
   --background-color-secondary: rgb(241 245 249);
+  --black: rgb(2 6 23);
 }
 
 .container {
