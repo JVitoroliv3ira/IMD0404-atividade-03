@@ -8,5 +8,5 @@ function cadastrarPassageiro(event) {
 
 function enviarPassageiros(event) {
   event.preventDefault();
-  console.log('Enviar Passageiros');
+  window.location.href = 'passageiros.html';
 }
