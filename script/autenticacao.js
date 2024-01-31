@@ -1,5 +1,5 @@
 document.getElementById('botao_login').addEventListener('click', autenticar);
-document.getElementById('botao_limpar_formulario_login');
+document.getElementById('botao_limpar_formulario_login').addEventListener('click', limpar);
 
 function autenticar(event) {
   event.preventDefault();
