@@ -55,13 +55,13 @@ function exibirErroAutenticacao() {
 }
 
 function exibirBadgeDeErro(mensagem) {
-  const badge = document.getElementById('badge_erro');
+  const badge = document.getElementById('badge_erro_autenticacao');
   badge.style.display = 'block';
   badge.textContent = mensagem;
 }
 
 function limparBadgeDeErro() {
-  const badge = document.getElementById('badge_erro');
+  const badge = document.getElementById('badge_erro_autenticacao');
   badge.style.display = 'none';
   badge.textContent = '';
 }
