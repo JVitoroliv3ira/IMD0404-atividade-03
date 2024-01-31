@@ -5,6 +5,11 @@
   background: var(--background-color-secondary);
 }
 
+.form_title {
+  font-size: 18px;
+  color: var(--black);
+}
+
 .form_group {
   display: flex;
   flex-direction: column;
@@ -22,7 +27,7 @@
   font-size: 18px;
 }
 
-.input, .button, .form {
+.input, .button, .form, .large_button, .badge_erro {
   border-radius: 5px;
 }
 
@@ -38,7 +43,7 @@
   justify-content: center;
 }
 
-.button {
+.button, .large_button {
   width: 150px;
   height: 45px;
   cursor: pointer;
@@ -50,7 +55,13 @@
   transition: .5s;
 }
 
-.button:hover {
+.large_button {
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.button:hover, .large_button:hover {
   background: var(--secondary);
 }
 
@@ -59,6 +70,5 @@
   color: var(--white);
   padding: 10px;
   margin-top: 10px;
-  border-radius: 5px;
   text-align: center;
 }
