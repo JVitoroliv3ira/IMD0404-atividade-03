@@ -21,7 +21,7 @@
           <h5 class="form_title">Cadastro de Passageiro</h5>
         </div>
         <div class="form_group">
-          <label>Nome</label>
+          <label for="nome">Nome</label>
           <input
             id="nome"
             name="nome"
@@ -31,7 +31,7 @@
         </div>
 
         <div class="form_group">
-          <label>CPF</label>
+          <label for="cpf">CPF</label>
           <input
             id="cpf"
             name="cpf"
@@ -41,10 +41,10 @@
         </div>
 
         <div class="form_group">
-          <label>Endereço</label>
+          <label for="endereco">Endereço</label>
           <input
-            id="nome"
-            name="nome"
+            id="endereco"
+            name="endereco"
             placeholder="Informe o endereço do passageiro" 
             class="input"
           />
@@ -75,10 +75,14 @@
         </div>
 
         <div class="form_group">
-          <button class="large_button">
+          <button
+            id="botao_cadastrar_passageiro"
+            class="large_button">
             Adicionar passageiro
           </button>
-          <button class="large_button">
+          <button
+            id="botao_enviar_passageiros"
+            class="large_button">
             Enviar
           </button>
         </div>
