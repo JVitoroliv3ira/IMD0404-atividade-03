@@ -4,8 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMD Airlines - Vendas</title>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/application.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/header.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/form.css">
 </head>
 <body>
-  <h1>Hello, World</h1>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="header_logo">IMD Airlines</a>
+    </header>
+    <main class="main">
+      <form class="form">
+        <div class="form_group_inline">
+          <h5 class="form_title">Cadastro de Passageiro</h5>
+        </div>
+        <div class="form_group">
+          <label for="nome">Nome</label>
+          <input
+            id="nome"
+            name="nome"
+            placeholder="Informe o nome do passageiro" 
+            class="input"
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="cpf">CPF</label>
+          <input
+            id="cpf"
+            name="cpf"
+            placeholder="Informe o CPF do passageiro" 
+            class="input"
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="endereco">Endereço</label>
+          <input
+            id="endereco"
+            name="endereco"
+            placeholder="Informe o endereço do passageiro" 
+            class="input"
+          />
+        </div>
+
+        <div class="form_group_inline">
+          <input
+            id="primeira_classe_radio_button"
+            name="classe_passageiro"
+            type="radio"
+            value="1ª Classe"
+          />
+          <label for="primeira_classe_radio_button">1ª Classe</label>
+          <input
+            id="segunda_classe_radio_button"
+            name="classe_passageiro"
+            type="radio"
+            value="2ª Classe"
+          />
+          <label for="segunda_classe_radio_button">2ª Classe</label>
+          <input
+            id="terceira_classe_radio_button"
+            name="classe_passageiro"
+            type="radio"
+            value="3ª Classe"
+          />
+          <label for="terceira_classe_radio_button">3ª Classe</label>
+        </div>
+
+        <div class="form_group">
+          <button
+            id="botao_cadastrar_passageiro"
+            class="large_button">
+            Adicionar passageiro
+          </button>
+          <button
+            id="botao_enviar_passageiros"
+            class="large_button">
+            Enviar
+          </button>
+        </div>
+        <div id="badge_erro_cadastro_passageiro" class="badge_erro" style="display: none;"></div>
+      </form>
+    </main>
+  </div>
+  <script src="script/cadastrar_passageiro.js"></script>
 </body>
 </html>
