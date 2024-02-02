@@ -30,6 +30,7 @@ function cadastrarPassageiro(event) {
   }
 
   passageiros.push(formulario);
+  console.log(passageiros)
   limparBadgeDeErro();
   limpar();
 }
@@ -81,9 +82,17 @@ function limparBadgeDeErro() {
 function enviarPassageiros(event) {
   event.preventDefault();
   limparBadgeDeErro();
-  limpar();
+
+  let passageirosSalvos = JSON.parse(localStorage.getItem('passageiros')) || [];
+
+  passageirosSalvos = passageirosSalvos.concat(passageiros);
+
+  localStorage.setItem('passageiros', JSON.stringify(passageirosSalvos));
+
   window.location.href = 'passageiros.html';
 }
+
+
 
 function limpar() {
   const nome = document.getElementById('nome');

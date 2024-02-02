@@ -8,12 +8,35 @@
   <link rel="stylesheet" type="text/css" href="styles/application.css"> 
   <link rel="stylesheet" type="text/css" href="styles/header.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/passageiros.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
       <a href="index.html" class="header_logo">IMD Airlines</a>
     </header>
+    <main class="main-content">
+      <div class="title-container">
+        <p class="title">Passageiros do IMD Airlines</p>
+      </div>
+      <div class="search-container">
+        <div class="input-container">
+          <input class="input" type="text" id="search-input" placeholder="Digite o valor da pesquisa" />
+          <button onclick="search()">Buscar</button>
+        </div>
+
+        <select id="class-filter">
+          <option value="">Listar todos</option>
+          <option value="1ª Classe">1ª Classe</option>
+          <option value="2ª Classe">2ª Classe</option>
+          <option value="3ª Classe">3ª Classe</option>
+        </select>
+   
+      </div>
+      
+      <div id="passageiros-lista"></div>
+    </main>
   </div>
+  <script src="script/passageiros.js"></script>
 </body>
 </html>

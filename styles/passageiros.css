@@ -1,0 +1,92 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.passageiro {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+  
+.passageiro strong {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.passageiro div:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+#passageiros-lista {
+    padding: 20px;
+}
+
+.passageiro-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+.passageiro-titulo {
+    margin-bottom: 10px;
+}
+  
+.search-container {
+    padding: 0 20px;
+    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.input-container {
+    gap: 10px;
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+  
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.search-container button:hover {
+    background-color: #45a049
+}
+  
+.search-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  
